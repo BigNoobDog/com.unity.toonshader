@@ -211,10 +211,19 @@ Shader "Universal Render Pipeline/Toon" {
         [Toggle(_)] _Inverse_Z_Axis_BLD (" Inverse Z-Axis (Built-in Light Direction)", Float ) = 1
     }
     SubShader {
+        PackageRequirements
+        {
+                "com.unity.render-pipelines.universal": "7.5.3"
+        }    
         Tags {
             "RenderType"="Opaque"
         }
         Pass {
+	   PackageRequirements
+           {
+                "com.unity.render-pipelines.universal": "7.5.3"
+           }    
+
             Name "Outline"
             Tags {
                 "LightMode" = "SRPDefaultUnlit"
@@ -251,6 +260,11 @@ Shader "Universal Render Pipeline/Toon" {
 
 //ToonCoreStart
         Pass {
+	    PackageRequirements
+            {
+                "com.unity.render-pipelines.universal": "7.5.3"
+            }    
+	
             Name "ForwardLit"
             Tags{"LightMode" = "UniversalForward"}
             ZWrite[_ZWriteMode]
@@ -340,6 +354,11 @@ Shader "Universal Render Pipeline/Toon" {
 
         Pass
         {
+	    PackageRequirements
+            {
+                "com.unity.render-pipelines.universal": "7.5.3"
+            }    
+
             Name "ShadowCaster"
             Tags{"LightMode" = "ShadowCaster"}
 
@@ -372,6 +391,10 @@ Shader "Universal Render Pipeline/Toon" {
 
         Pass
         {
+	    PackageRequirements
+            {
+                "com.unity.render-pipelines.universal": "7.5.3"
+            }    
             Name "DepthOnly"
             Tags{"LightMode" = "DepthOnly"}
 
