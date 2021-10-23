@@ -219,10 +219,6 @@ Shader "Universal Render Pipeline/Toon" {
             "RenderType"="Opaque"
         }
         Pass {
-	   PackageRequirements
-           {
-                "com.unity.render-pipelines.universal": "7.5.3"
-           }    
 
             Name "Outline"
             Tags {
@@ -260,10 +256,6 @@ Shader "Universal Render Pipeline/Toon" {
 
 //ToonCoreStart
         Pass {
-	    PackageRequirements
-            {
-                "com.unity.render-pipelines.universal": "7.5.3"
-            }    
 	
             Name "ForwardLit"
             Tags{"LightMode" = "UniversalForward"}
@@ -354,10 +346,6 @@ Shader "Universal Render Pipeline/Toon" {
 
         Pass
         {
-	    PackageRequirements
-            {
-                "com.unity.render-pipelines.universal": "7.5.3"
-            }    
 
             Name "ShadowCaster"
             Tags{"LightMode" = "ShadowCaster"}
@@ -391,10 +379,6 @@ Shader "Universal Render Pipeline/Toon" {
 
         Pass
         {
-	    PackageRequirements
-            {
-                "com.unity.render-pipelines.universal": "7.5.3"
-            }    
             Name "DepthOnly"
             Tags{"LightMode" = "DepthOnly"}
 
