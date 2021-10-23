@@ -581,6 +581,10 @@ Shader "HDRP/Toon"
 
     SubShader
     {
+        PackageRequirements
+        {
+           "com.unity.render-pipelines.high-definition": "7.5.3"
+        }    
         // This tags allow to use the shader replacement features
         Tags{ "RenderPipeline"="HDRenderPipeline" "RenderType" = "HDLitShader" }
 
